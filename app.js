@@ -968,6 +968,21 @@
     // -----------------------------------------------------------------------
     // Featured Collection Click (FR-06)
     // -----------------------------------------------------------------------
+    // Featured Collection & Hero Showcase Card Clicks (FR-04, FR-06)
+    // -----------------------------------------------------------------------
+    const heroFeatureCard = document.getElementById('hero-feature-card');
+    if (heroFeatureCard) {
+      heroFeatureCard.addEventListener('click', () => {
+        openLightbox('nat-01');
+      });
+      heroFeatureCard.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openLightbox('nat-01');
+        }
+      });
+    }
+
     if (DOM.featuredGrid) {
       DOM.featuredGrid.addEventListener('click', (e) => {
         const item = e.target.closest('.featured-item');
