@@ -117,7 +117,12 @@
 
     <!-- 1. HERO / INTRODUCTION SECTION -->
     <section class="hero-section" id="hero" aria-labelledby="hero-title">
-      <div class="hero-background-glow" aria-hidden="true"></div>
+      <!-- Full-bleed background image & cinematic overlay -->
+      <div class="hero-bg-media" aria-hidden="true">
+        <img src="assets/hero-bg.jpg" alt="Majestic alpine mountains and auroral reflection" class="hero-bg-img" loading="eager" fetchpriority="high">
+        <div class="hero-bg-overlay"></div>
+      </div>
+
       <div class="container hero-container">
         
         <div class="hero-content">
@@ -177,22 +182,12 @@
           </div>
         </div>
 
-        <!-- Hero Visual Showcase (Interactive Teaser Carousel / Card Stack) -->
-        <div class="hero-visual" aria-hidden="true">
-          <div class="hero-card-stack">
-            <div class="hero-floating-card card-front">
-              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80&auto=format" alt="Majestic Alpine Vista" loading="eager" width="600" height="400">
-              <div class="floating-card-info">
-                <span class="floating-tag">Nature</span>
-                <span class="floating-name">Aurora Over Reinefjorden</span>
-              </div>
-            </div>
-            <div class="hero-floating-card card-middle">
-              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&q=80&auto=format" alt="Futuristic Architecture" loading="lazy" width="600" height="400">
-            </div>
-            <div class="hero-floating-card card-back">
-              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80&auto=format" alt="Artisan Portrait" loading="lazy" width="600" height="400">
-            </div>
+        <!-- Curatorial Photo Credit Badge -->
+        <div class="hero-curatorial-credit" aria-hidden="true">
+          <span class="credit-dot"></span>
+          <div class="credit-info">
+            <span class="credit-title">Alpine Aurora • Arctic Sanctuary</span>
+            <span class="credit-sub">Fine Art Master Series 2026</span>
           </div>
         </div>
 
