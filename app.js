@@ -487,7 +487,7 @@
     if (!currentItem || !DOM.lbFavBtn) return;
     const isFav = state.favorites.includes(currentItem.id);
     DOM.lbFavBtn.classList.toggle('is-active', isFav);
-    DOM.lbFavBtn.style.color = isFav ? 'var(--accent-rose)' : 'var(--text-muted)';
+    DOM.lbFavBtn.style.color = isFav ? 'var(--accent-gold)' : '#ffffff';
     const svg = DOM.lbFavBtn.querySelector('svg');
     if (svg) {
       svg.style.fill = isFav ? 'currentColor' : 'none';

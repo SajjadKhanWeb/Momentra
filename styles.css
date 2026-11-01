@@ -7,25 +7,25 @@
    1. CSS CUSTOM PROPERTIES (Design Tokens)
    -------------------------------------------------------------------------- */
 :root {
-  /* Color Palette */
+  /* Color Palette - Strict White & Yellow theme */
   --bg-primary: #0a0b0e;
   --bg-secondary: #11141b;
   --bg-tertiary: #171c26;
-  --bg-card: rgba(23, 28, 38, 0.7);
-  --bg-glass: rgba(17, 20, 27, 0.75);
-  --bg-overlay: rgba(5, 6, 9, 0.92);
+  --bg-card: rgba(23, 28, 38, 0.75);
+  --bg-glass: rgba(17, 20, 27, 0.85);
+  --bg-overlay: rgba(5, 6, 9, 0.94);
 
-  --accent-gold: #e5c07b;
-  --accent-gold-hover: #f3d088;
-  --accent-gold-dim: rgba(229, 192, 123, 0.15);
-  --accent-gold-border: rgba(229, 192, 123, 0.35);
-  --accent-cyan: #7aa2f7;
-  --accent-rose: #f7768e;
+  --accent-gold: #f5c518; /* Pure Vibrant Yellow / Gold */
+  --accent-gold-hover: #ffd700;
+  --accent-gold-dim: rgba(245, 197, 24, 0.15);
+  --accent-gold-border: rgba(245, 197, 24, 0.45);
+  --accent-cyan: #f5c518;
+  --accent-rose: #f5c518;
 
-  /* Typography */
-  --text-main: #f5f6f8;
-  --text-muted: #9aa0ad;
-  --text-dim: #646b79;
+  /* Typography - Strict White & Yellow */
+  --text-main: #ffffff;
+  --text-muted: #e6e8ec;
+  --text-dim: #b2b8c5;
   --text-inverse: #0a0b0e;
 
   --font-serif: 'Cormorant Garamond', Garamond, Georgia, serif;
@@ -278,13 +278,13 @@ select:focus-visible {
   font-size: 1.55rem;
   font-weight: 700;
   letter-spacing: 0.18em;
-  color: var(--text-main);
+  color: #ffffff;
   line-height: 1;
 }
 
 .logo-sub {
   font-size: 0.62rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.28em;
   color: var(--accent-gold);
   margin-top: 2px;
@@ -363,10 +363,10 @@ select:focus-visible {
   height: 18px;
   padding: 0 4px;
   font-size: 0.7rem;
-  font-weight: 700;
+  font-weight: 800;
   border-radius: var(--radius-pill);
-  background: var(--accent-rose);
-  color: #fff;
+  background: var(--accent-gold);
+  color: #0a0b0e;
 }
 
 /* Mobile Toggle Hamburger */
@@ -532,7 +532,7 @@ select:focus-visible {
   background: 
     linear-gradient(to right, rgba(10, 11, 14, 0.95) 0%, rgba(10, 11, 14, 0.82) 45%, rgba(10, 11, 14, 0.45) 75%, rgba(10, 11, 14, 0.75) 100%),
     linear-gradient(to bottom, rgba(10, 11, 14, 0.7) 0%, transparent 25%, transparent 60%, rgba(10, 11, 14, 0.98) 100%),
-    radial-gradient(circle at 75% 35%, rgba(122, 162, 247, 0.12) 0%, transparent 60%);
+    radial-gradient(circle at 75% 35%, rgba(245, 197, 24, 0.12) 0%, transparent 60%);
 }
 
 .hero-container {
@@ -575,29 +575,29 @@ select:focus-visible {
 .hero-title {
   font-family: var(--font-serif);
   font-size: clamp(3rem, 6vw, 5.2rem);
-  font-weight: 300;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
   margin-bottom: 1.5rem;
-  color: var(--text-main);
-  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.85);
 }
 
 .title-italic {
   font-style: italic;
-  font-weight: 400;
+  font-weight: 700;
   color: var(--accent-gold);
-  text-shadow: 0 0 30px rgba(229, 192, 123, 0.35);
+  text-shadow: 0 0 35px rgba(245, 197, 24, 0.45);
 }
 
 .hero-description {
   font-size: clamp(1.05rem, 1.3vw, 1.22rem);
-  color: rgba(245, 246, 248, 0.88);
+  color: #ffffff;
   line-height: 1.75;
-  font-weight: 300;
+  font-weight: 400;
   max-width: 660px;
   margin-bottom: 2.25rem;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
 }
 
 .hero-cta-group {
@@ -669,8 +669,8 @@ select:focus-visible {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--accent-cyan);
-  box-shadow: 0 0 10px var(--accent-cyan);
+  background: var(--accent-gold);
+  box-shadow: 0 0 10px var(--accent-gold);
   animation: pulse-dot 2s infinite ease-in-out;
 }
 
@@ -1066,14 +1066,14 @@ select:focus-visible {
 }
 
 .card-fav-btn:hover {
-  color: var(--accent-rose);
+  color: var(--accent-gold);
   transform: scale(1.1);
   background: rgba(10, 11, 14, 0.95);
 }
 
 .card-fav-btn.is-active {
-  color: var(--accent-rose);
-  fill: var(--accent-rose);
+  color: var(--accent-gold);
+  fill: var(--accent-gold);
 }
 
 .card-fav-btn.is-active svg {
@@ -1581,11 +1581,11 @@ select:focus-visible {
 }
 
 .form-feedback.success {
-  color: #10b981;
+  color: var(--accent-gold);
 }
 
 .form-feedback.error {
-  color: var(--accent-rose);
+  color: #ffffff;
 }
 
 @media (max-width: 850px) {
@@ -1904,9 +1904,9 @@ select:focus-visible {
 }
 
 .lb-close-btn:hover {
-  background: rgba(247, 118, 142, 0.2);
-  border-color: var(--accent-rose);
-  color: var(--accent-rose);
+  background: rgba(245, 197, 24, 0.2);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
 }
 
 /* Lightbox Stage (Image Viewport & Nav Arrows) */
