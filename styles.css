@@ -255,6 +255,15 @@ select:focus-visible {
   text-decoration: none;
 }
 
+/* Supplied Momentra Visual Gallery brand artwork in the header. */
+.header-logo {
+  display: block;
+  width: 150px;
+  height: 68px;
+  object-fit: contain;
+  object-position: center;
+}
+
 .logo-mark {
   display: flex;
   align-items: center;
@@ -487,6 +496,11 @@ select:focus-visible {
 }
 
 @media (max-width: 900px) {
+  .header-logo {
+    width: 126px;
+    height: 58px;
+  }
+
   .desktop-nav {
     display: none;
   }
@@ -1099,8 +1113,8 @@ select:focus-visible {
 
 .gallery-card:hover {
   transform: translateY(-6px);
-  border-color: var(--border-hover);
-  box-shadow: var(--shadow-glow);
+  border-color: rgba(245, 197, 24, 0.5);
+  box-shadow: 0 10px 40px rgba(245, 197, 24, 0.3), 0 0 25px rgba(245, 197, 24, 0.2), 0 0 60px rgba(245, 197, 24, 0.1);
 }
 
 .gallery-card-img-wrap {
@@ -1341,8 +1355,8 @@ select:focus-visible {
 
 .featured-item:hover {
   transform: translateY(-8px);
-  border-color: var(--accent-gold-border);
-  box-shadow: var(--shadow-glow);
+  border-color: rgba(245, 197, 24, 0.5);
+  box-shadow: 0 10px 40px rgba(245, 197, 24, 0.3), 0 0 25px rgba(245, 197, 24, 0.2), 0 0 60px rgba(245, 197, 24, 0.1);
 }
 
 .featured-item:nth-child(1) {
@@ -1560,7 +1574,23 @@ select:focus-visible {
   border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid var(--border-subtle);
-  box-shadow: var(--shadow-card);
+  box-shadow: 0 4px 12px rgba(245, 197, 24, 0.4), 0 0 20px rgba(245, 197, 24, 0.2);
+}
+
+/* About header: title + right‑side image on one line */
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-header-img {
+  max-width: 200px;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 12px rgba(245, 197, 24, 0.4), 0 0 20px rgba(245, 197, 24, 0.2);
 }
 
 .about-visual-card img {

@@ -1,46 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MOMENTRA — Fine Art Photography & Visual Storytelling</title>
-  <meta name="description" content="Explore MOMENTRA, a curated photography exhibition capturing the world through timeless visual storytelling across Nature, Architecture, Portraits, and Travel.">
-  <meta name="keywords" content="photography, image gallery, masonry gallery, fine art photography, nature photography, portraits, travel, architecture">
+  <meta name="description"
+    content="Explore MOMENTRA, a curated photography exhibition capturing the world through timeless visual storytelling across Nature, Architecture, Portraits, and Travel.">
+  <meta name="keywords"
+    content="photography, image gallery, masonry gallery, fine art photography, nature photography, portraits, travel, architecture">
   <meta name="theme-color" content="#0a0b0e">
 
   <!-- Open Graph / Meta -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="MOMENTRA — Fine Art Photography Gallery">
-  <meta property="og:description" content="A curated visual storytelling gallery celebrating light, geometry, and human emotion across the globe.">
-  
+  <meta property="og:description"
+    content="A curated visual storytelling gallery celebrating light, geometry, and human emotion across the globe.">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 
   <!-- Global Header / Navigation -->
   <header class="site-header" id="site-header">
     <div class="container header-container">
-      <!-- Brand Logo -->
-      <a href="#hero" class="brand-logo" aria-label="MOMENTRA Home">
-        <span class="logo-mark" aria-hidden="true">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="3"></circle>
-            <path d="M3 9h3l2-3h8l2 3h3a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V11a2 2 0 0 1 2-2z"></path>
-          </svg>
-        </span>
-        <span class="logo-text">
-          <span class="logo-name">MOMENTRA</span>
-          <span class="logo-sub">VISUAL GALLERY</span>
-        </span>
+      <a href="index.html" class="brand-logo" aria-label="MOMENTRA Visual Gallery home">
+        <img src="assets/momentra-header-logo.png" alt="Momentra Visual Gallery" class="header-logo">
       </a>
-
       <!-- Desktop Navigation Links -->
       <nav class="desktop-nav" aria-label="Primary Navigation">
         <ul class="nav-list">
@@ -55,7 +51,8 @@
       <!-- Header Tools & Mobile Menu Toggle -->
       <div class="header-tools">
         <!-- Quick Search Toggle / Input in header -->
-        <button type="button" class="tool-btn" id="header-search-btn" aria-label="Search gallery images" title="Search Photographs">
+        <button type="button" class="tool-btn" id="header-search-btn" aria-label="Search gallery images"
+          title="Search Photographs">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -64,15 +61,19 @@
         </button>
 
         <!-- View Favorites Toggle -->
-        <button type="button" class="tool-btn fav-tool-btn" id="view-favorites-btn" aria-label="View Saved Favorites" title="View Saved Favorites">
+        <button type="button" class="tool-btn fav-tool-btn" id="view-favorites-btn" aria-label="View Saved Favorites"
+          title="View Saved Favorites">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+            </path>
           </svg>
           <span class="fav-count" id="header-fav-count" aria-label="0 favorite photographs">0</span>
         </button>
 
         <!-- Mobile Menu Toggle Button -->
-        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="mobile-nav"
+          aria-label="Toggle navigation menu">
           <span class="hamburger-bar"></span>
           <span class="hamburger-bar"></span>
           <span class="hamburger-bar"></span>
@@ -84,7 +85,7 @@
     <div class="mobile-nav-drawer" id="mobile-nav" aria-hidden="true">
       <div class="mobile-nav-inner">
         <div class="mobile-nav-header">
-          <span class="logo-name">MOMENTRA</span>
+
           <button type="button" class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation menu">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -101,7 +102,8 @@
           <li><a href="#footer" class="mobile-nav-link">Contact & Social</a></li>
         </ul>
         <div class="mobile-nav-footer">
-          <p class="mobile-nav-desc">Visual storytelling captured through natural light, geometric harmony, and human grace.</p>
+          <p class="mobile-nav-desc">Visual storytelling captured through natural light, geometric harmony, and human
+            grace.</p>
           <div class="mobile-socials">
             <a href="#" aria-label="Instagram">Instagram</a> •
             <a href="#" aria-label="Behance">Behance</a> •
@@ -119,12 +121,13 @@
     <section class="hero-section" id="hero" aria-labelledby="hero-title">
       <!-- Full-bleed background image & cinematic overlay -->
       <div class="hero-bg-media" aria-hidden="true">
-        <img src="assets/hero-bg.jpg" alt="Majestic alpine mountains and auroral reflection" class="hero-bg-img" loading="eager" fetchpriority="high">
+        <img src="assets/hero-bg.jpg" alt="Majestic alpine mountains and auroral reflection" class="hero-bg-img"
+          loading="eager" fetchpriority="high">
         <div class="hero-bg-overlay"></div>
       </div>
 
       <div class="container hero-container">
-        
+
         <div class="hero-content">
           <div class="hero-pill-badge">
             <span class="badge-icon">✦</span>
@@ -137,8 +140,8 @@
           </h1>
 
           <p class="hero-description">
-            Welcome to MOMENTRA. We curate transcendent moments where light meets stillness. 
-            From untamed alpine frontiers to poignant human portraits, each photograph is an 
+            Welcome to MOMENTRA. We curate transcendent moments where light meets stillness.
+            From untamed alpine frontiers to poignant human portraits, each photograph is an
             unbroken narrative frozen in time.
           </p>
 
@@ -152,115 +155,57 @@
             </a>
             <a href="#featured" class="btn btn-secondary">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
               </svg>
               <span>Featured Works</span>
             </a>
           </div>
-
-          <!-- Hero Metrics Bar -->
-          <div class="hero-stats-grid" role="list">
-            <div class="stat-card" role="listitem">
-              <span class="stat-number" id="stat-photos-count">20+</span>
-              <span class="stat-label">Master Artworks</span>
-            </div>
-            <div class="stat-divider" aria-hidden="true"></div>
-            <div class="stat-card" role="listitem">
-              <span class="stat-number">4</span>
-              <span class="stat-label">Thematic Pillars</span>
-            </div>
-            <div class="stat-divider" aria-hidden="true"></div>
-            <div class="stat-card" role="listitem">
-              <span class="stat-number">100%</span>
-              <span class="stat-label">High-Resolution</span>
-            </div>
-            <div class="stat-divider" aria-hidden="true"></div>
-            <div class="stat-card" role="listitem">
-              <span class="stat-number">4K</span>
-              <span class="stat-label">Fidelity Lightbox</span>
-            </div>
-          </div>
         </div>
-
-        <!-- Hero Right Side: VIP Showcase Card filling the right side -->
-        <div class="hero-showcase-panel">
-          <div class="hero-showcase-glass-card" id="hero-feature-card" tabindex="0" role="button" aria-label="Inspect Masterwork in 4K Lightbox">
-            <div class="showcase-card-top">
-              <span class="showcase-pill">✦ MASTERWORK OF 2026</span>
-              <span class="showcase-cat">Nature</span>
-            </div>
-
-            <div class="showcase-card-body">
-              <h3 class="showcase-card-title">Alpine Aurora & Arctic Reflection</h3>
-              <p class="showcase-card-desc">An unbroken glacial horizon illuminated by ethereal northern light curtains over snow-dusted jagged summits.</p>
-              
-              <div class="showcase-card-specs">
-                <span class="spec-item">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg>
-                  Lofoten, Norway
-                </span>
-                <span class="spec-item mono-text">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="3"></circle>
-                    <path d="M3 9h3l2-3h8l2 3h3a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V11a2 2 0 0 1 2-2z"></path>
-                  </svg>
-                  Sony A7R V • 16mm f/2.8 • ISO 1600
-                </span>
-              </div>
-            </div>
-
-            <div class="showcase-card-footer">
-              <span class="showcase-action-btn">
-                <span>Inspect in 4K Lightbox</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </span>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
 
     <!-- 2. CATEGORIES & FILTERS SECTION (FR-03) -->
     <section class="categories-section" id="categories" aria-labelledby="categories-heading">
       <div class="container">
-        
+
         <div class="section-header text-center">
           <span class="section-eyebrow">CURATED PERSPECTIVES</span>
           <h2 class="section-title" id="categories-heading">Explore by Discipline</h2>
           <p class="section-subtitle">
-            Filter our permanent collection by visual domain or search for specific scenes, photographers, and camera aesthetics.
+            Filter our permanent collection by visual domain or search for specific scenes, photographers, and camera
+            aesthetics.
           </p>
         </div>
 
         <!-- Filter Controls Container -->
         <div class="filter-controls-wrapper">
-          
+
           <!-- Category Filter Buttons (FR-03: All, Nature, Architecture, Portraits, Travel) -->
           <div class="category-filters-container" role="tablist" aria-label="Filter gallery by category">
-            <button type="button" class="filter-btn active" data-category="all" role="tab" aria-selected="true" id="filter-all">
+            <button type="button" class="filter-btn active" data-category="all" role="tab" aria-selected="true"
+              id="filter-all">
               <span class="filter-label">All Works</span>
               <span class="filter-badge" id="badge-all">0</span>
             </button>
-            <button type="button" class="filter-btn" data-category="nature" role="tab" aria-selected="false" id="filter-nature">
+            <button type="button" class="filter-btn" data-category="nature" role="tab" aria-selected="false"
+              id="filter-nature">
               <span class="filter-label">Nature</span>
               <span class="filter-badge" id="badge-nature">0</span>
             </button>
-            <button type="button" class="filter-btn" data-category="architecture" role="tab" aria-selected="false" id="filter-architecture">
+            <button type="button" class="filter-btn" data-category="architecture" role="tab" aria-selected="false"
+              id="filter-architecture">
               <span class="filter-label">Architecture</span>
               <span class="filter-badge" id="badge-architecture">0</span>
             </button>
-            <button type="button" class="filter-btn" data-category="portraits" role="tab" aria-selected="false" id="filter-portraits">
+            <button type="button" class="filter-btn" data-category="portraits" role="tab" aria-selected="false"
+              id="filter-portraits">
               <span class="filter-label">Portraits</span>
               <span class="filter-badge" id="badge-portraits">0</span>
             </button>
-            <button type="button" class="filter-btn" data-category="travel" role="tab" aria-selected="false" id="filter-travel">
+            <button type="button" class="filter-btn" data-category="travel" role="tab" aria-selected="false"
+              id="filter-travel">
               <span class="filter-label">Travel</span>
               <span class="filter-badge" id="badge-travel">0</span>
             </button>
@@ -268,22 +213,26 @@
 
           <!-- Secondary Toolbar: Search, Layout Toggle, Sort -->
           <div class="gallery-secondary-toolbar">
-            
+
             <!-- Live Search Bar -->
             <div class="search-input-box">
-              <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
                 <circle cx="11" cy="11" r="8"></circle>
                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
               </svg>
-              <input type="text" id="gallery-search-input" placeholder="Search title, photographer, location..." aria-label="Search gallery images">
-              <button type="button" id="clear-search-btn" class="clear-search-btn" aria-label="Clear search input" hidden>
+              <input type="text" id="gallery-search-input" placeholder="Search title, photographer, location..."
+                aria-label="Search gallery images">
+              <button type="button" id="clear-search-btn" class="clear-search-btn" aria-label="Clear search input"
+                hidden>
                 ✕
               </button>
             </div>
 
             <!-- Layout Columns Toggle (Masonry Dynamic vs Equal Grid) -->
             <div class="layout-toggle-group" aria-label="Gallery Layout Mode">
-              <button type="button" class="layout-btn active" id="layout-masonry-btn" aria-pressed="true" title="Masonry Layout">
+              <button type="button" class="layout-btn active" id="layout-masonry-btn" aria-pressed="true"
+                title="Masonry Layout">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <rect x="3" y="3" width="7" height="10" rx="1"></rect>
                   <rect x="14" y="3" width="7" height="6" rx="1"></rect>
@@ -331,7 +280,7 @@
     <!-- 3. MAIN IMAGE GALLERY (FR-02) -->
     <section class="gallery-section" id="gallery" aria-labelledby="gallery-heading">
       <div class="container">
-        
+
         <h2 id="gallery-heading" class="visually-hidden">Main Photographic Collection</h2>
 
         <!-- Masonry / Responsive Image Gallery Container -->
@@ -359,14 +308,15 @@
     <!-- 4. FEATURED COLLECTION SECTION (FR-06) -->
     <section class="featured-section" id="featured" aria-labelledby="featured-heading">
       <div class="container">
-        
+
         <div class="section-header featured-header">
           <div class="header-left">
             <span class="section-eyebrow">MASTERWORKS</span>
             <h2 class="section-title" id="featured-heading">Featured Collection</h2>
           </div>
           <p class="section-subtitle">
-            Four iconic frames celebrated by international photography institutions for transcendent composition, narrative resonance, and masterclass lighting.
+            Four iconic frames celebrated by international photography institutions for transcendent composition,
+            narrative resonance, and masterclass lighting.
           </p>
         </div>
 
@@ -382,18 +332,25 @@
     <section class="about-section" id="about" aria-labelledby="about-heading">
       <div class="container">
         <div class="about-grid">
-          
+
           <!-- Story Content -->
           <div class="about-content">
             <span class="section-eyebrow">THE PHILOSOPHY OF MOMENTRA</span>
-            <h2 class="section-title" id="about-heading">Visual Storytelling Through Light & Silence</h2>
-            
+            <div class="about-header">
+              <h2 class="section-title about-title-underline" id="about-heading">Visual Storytelling Through Light &amp;
+                Silence</h2>
+            </div>
+
             <p class="about-lead">
-              Founded on the belief that a single frame can hold the weight of an epoch, MOMENTRA is an international fine art photography collective dedicated to the eternal dialogue between observer and subject.
+              Founded on the belief that a single frame can hold the weight of an epoch, MOMENTRA is an international
+              fine art photography collective dedicated to the eternal dialogue between observer and subject.
             </p>
 
             <p class="about-body">
-              Every photograph in our archive is selected through rigorous curatorial scrutiny. We do not merely catalog scenes; we seek the exact fraction of a second where light, geometry, and human emotion converge into lasting art. Whether documenting the quiet majesty of Arctic fjords or the intimate gaze of distant artisans, MOMENTRA stands as a sanctuary for contemplative seeing.
+              Every photograph in our archive is selected through rigorous curatorial scrutiny. We do not merely catalog
+              scenes; we seek the exact fraction of a second where light, geometry, and human emotion converge into
+              lasting art. Whether documenting the quiet majesty of Arctic fjords or the intimate gaze of distant
+              artisans, MOMENTRA stands as a sanctuary for contemplative seeing.
             </p>
 
             <!-- Three Core Pillars -->
@@ -402,7 +359,8 @@
                 <div class="pillar-number">01</div>
                 <div class="pillar-text">
                   <h4 class="pillar-title">Uncompromising Authenticity</h4>
-                  <p class="pillar-desc">True to the organic environment. We honor real light, untampered textures, and honest human emotion.</p>
+                  <p class="pillar-desc">True to the organic environment. We honor real light, untampered textures, and
+                    honest human emotion.</p>
                 </div>
               </div>
 
@@ -410,7 +368,8 @@
                 <div class="pillar-number">02</div>
                 <div class="pillar-text">
                   <h4 class="pillar-title">Geometric & Temporal Rhythm</h4>
-                  <p class="pillar-desc">Compositions grounded in mathematical harmony, leading lines, and the patience of the golden hour.</p>
+                  <p class="pillar-desc">Compositions grounded in mathematical harmony, leading lines, and the patience
+                    of the golden hour.</p>
                 </div>
               </div>
 
@@ -418,7 +377,8 @@
                 <div class="pillar-number">03</div>
                 <div class="pillar-text">
                   <h4 class="pillar-title">Narrative Transcendence</h4>
-                  <p class="pillar-desc">Photographs that do not end at the frame's edge, but invite the viewer to imagine the story before and after.</p>
+                  <p class="pillar-desc">Photographs that do not end at the frame's edge, but invite the viewer to
+                    imagine the story before and after.</p>
                 </div>
               </div>
             </div>
@@ -434,14 +394,16 @@
           <!-- About Gallery Visual Collage -->
           <div class="about-visuals" aria-hidden="true">
             <div class="about-visual-card card-primary">
-              <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=800&q=80&auto=format" alt="Curator inspecting photographic print" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=800&q=80&auto=format"
+                alt="Curator inspecting photographic print" loading="lazy">
               <div class="visual-badge">
                 <span class="badge-title">Curatorial Atelier</span>
                 <span class="badge-sub">Kyoto & Oslo Archives</span>
               </div>
             </div>
             <div class="about-visual-card card-secondary">
-              <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&q=80&auto=format" alt="Photographer in nature" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&q=80&auto=format"
+                alt="Photographer in nature" loading="lazy">
             </div>
           </div>
 
@@ -456,11 +418,13 @@
           <div class="newsletter-text">
             <span class="section-eyebrow">CURATOR'S DISPATCH</span>
             <h2 class="newsletter-title" id="newsletter-heading">Receive Monthly Exhibition Portfolios</h2>
-            <p class="newsletter-desc">Delivered on every full moon: high-resolution wallpaper sets, behind-the-lens essays, and invitations to private gallery exhibitions.</p>
+            <p class="newsletter-desc">Delivered on every full moon: high-resolution wallpaper sets, behind-the-lens
+              essays, and invitations to private gallery exhibitions.</p>
           </div>
           <form class="newsletter-form" id="newsletter-form" novalidate>
             <div class="input-group">
-              <input type="email" id="newsletter-email" placeholder="Enter your email address..." required aria-label="Your email address">
+              <input type="email" id="newsletter-email" placeholder="Enter your email address..." required
+                aria-label="Your email address">
               <button type="submit" class="btn btn-primary">Subscribe</button>
             </div>
             <p class="form-feedback" id="newsletter-feedback" aria-live="polite"></p>
@@ -474,32 +438,26 @@
   <!-- 6. FOOTER SECTION (FR-08) -->
   <footer class="site-footer" id="footer">
     <div class="container footer-container">
-      
+
       <div class="footer-top-grid">
         <!-- Brand Column -->
         <div class="footer-col footer-brand-col">
-          <a href="#hero" class="brand-logo" aria-label="MOMENTRA Home">
-            <span class="logo-mark">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <circle cx="12" cy="12" r="3"></circle>
-                <path d="M3 9h3l2-3h8l2 3h3a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V11a2 2 0 0 1 2-2z"></path>
-              </svg>
-            </span>
-            <span class="logo-name">MOMENTRA</span>
-          </a>
           <p class="footer-bio">
-            A celebrated contemporary gallery devoted to preserving fine art photography, documenting landscape serenity, structural design, and the diverse tapestry of humanity.
+            A celebrated contemporary gallery devoted to preserving fine art photography, documenting landscape
+            serenity, structural design, and the diverse tapestry of humanity.
           </p>
           <!-- Social Media Links (FR-08) -->
           <div class="social-links" aria-label="Social media channels">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link"
+              aria-label="Instagram">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
               </svg>
             </a>
-            <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Behance">
+            <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-link"
+              aria-label="Behance">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M3 8h5a3 3 0 0 1 3 3 2.5 2.5 0 0 1-2 2.5A3 3 0 0 1 3 16V8z"></path>
                 <line x1="3" y1="12" x2="8" y2="12"></line>
@@ -507,12 +465,14 @@
                 <line x1="14" y1="9" x2="19" y2="9"></line>
               </svg>
             </a>
-            <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Unsplash">
+            <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer" class="social-link"
+              aria-label="Unsplash">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M10 9V4h4v5h-4zM4 11h16v9H4v-9z"></path>
               </svg>
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X / Twitter">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link"
+              aria-label="X / Twitter">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M4 4l16 16M4 20L20 4"></path>
               </svg>
@@ -546,7 +506,8 @@
         <!-- Curatorial Inquiries Column -->
         <div class="footer-col">
           <h4 class="footer-col-title">Atelier & Prints</h4>
-          <p class="footer-text">Archival Giclée Fine Art Prints available upon private request. All editions numbered and certified.</p>
+          <p class="footer-text">Archival Giclée Fine Art Prints available upon private request. All editions numbered
+            and certified.</p>
           <p class="footer-contact-item">
             <span class="contact-label">Inquiries:</span>
             <a href="mailto:curator@momentra-gallery.com" class="contact-val">curator@momentra-gallery.com</a>
@@ -565,11 +526,11 @@
           © 2026 MOMENTRA Visual Arts Ltd. All rights reserved. Curated for timeless aesthetic appreciation.
         </p>
         <div class="footer-bottom-links">
-          <a href="#">Print Licensing</a>
+          <a href="print-licensing.html">Print Licensing</a>
           <span class="bullet-sep">•</span>
-          <a href="#">Privacy Policy</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
           <span class="bullet-sep">•</span>
-          <a href="#">Terms of Exhibition</a>
+          <a href="terms-of-exhibition.html">Terms of Exhibition</a>
         </div>
       </div>
 
@@ -586,14 +547,15 @@
   <!-- ========================================================================= -->
   <!-- IMAGE LIGHTBOX MODAL OVERLAY (FR-04, FR-05)                               -->
   <!-- ========================================================================= -->
-  <div class="lightbox-overlay" id="lightbox-modal" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-hidden="true" tabindex="-1">
-    
+  <div class="lightbox-overlay" id="lightbox-modal" role="dialog" aria-modal="true" aria-labelledby="lightbox-title"
+    aria-hidden="true" tabindex="-1">
+
     <!-- Lightbox Background Backdrop -->
     <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
 
     <!-- Lightbox Main Frame -->
     <div class="lightbox-container" id="lightbox-container">
-      
+
       <!-- Top Bar: Counter, Title snippet, Actions (Close, Zoom, Share) -->
       <header class="lightbox-header">
         <div class="lightbox-meta-top">
@@ -608,7 +570,8 @@
 
         <div class="lightbox-top-actions">
           <!-- Toggle Zoom -->
-          <button type="button" class="lb-action-btn" id="lb-zoom-btn" aria-label="Toggle zoom magnification" title="Zoom In/Out">
+          <button type="button" class="lb-action-btn" id="lb-zoom-btn" aria-label="Toggle zoom magnification"
+            title="Zoom In/Out">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -620,12 +583,15 @@
           <!-- Toggle Favorite from Lightbox -->
           <button type="button" class="lb-action-btn" id="lb-fav-btn" aria-label="Add to favorites" title="Favorite">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+              </path>
             </svg>
           </button>
 
           <!-- Close Button (FR-04) -->
-          <button type="button" class="lb-action-btn lb-close-btn" id="lb-close-btn" aria-label="Close image viewer (Press Escape)" title="Close (Esc)">
+          <button type="button" class="lb-action-btn lb-close-btn" id="lb-close-btn"
+            aria-label="Close image viewer (Press Escape)" title="Close (Esc)">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
               <line x1="18" y1="6" x2="6" y2="18"></line>
               <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -636,9 +602,10 @@
 
       <!-- Center Body: Prev Button, Image Viewer Stage, Next Button -->
       <div class="lightbox-stage">
-        
+
         <!-- Previous Image Control (FR-04, FR-05) -->
-        <button type="button" class="lb-nav-btn lb-prev-btn" id="lb-prev-btn" aria-label="Previous photograph (Left arrow)" title="Previous (Left Arrow)">
+        <button type="button" class="lb-nav-btn lb-prev-btn" id="lb-prev-btn"
+          aria-label="Previous photograph (Left arrow)" title="Previous (Left Arrow)">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <polyline points="15 18 9 12 15 6"></polyline>
           </svg>
@@ -651,7 +618,8 @@
         </div>
 
         <!-- Next Image Control (FR-04, FR-05) -->
-        <button type="button" class="lb-nav-btn lb-next-btn" id="lb-next-btn" aria-label="Next photograph (Right arrow)" title="Next (Right Arrow)">
+        <button type="button" class="lb-nav-btn lb-next-btn" id="lb-next-btn" aria-label="Next photograph (Right arrow)"
+          title="Next (Right Arrow)">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
@@ -664,9 +632,10 @@
         <div class="lightbox-info-pane">
           <div class="lb-info-primary">
             <h3 class="lightbox-image-title" id="lightbox-title">Aurora Over Reinefjorden</h3>
-            <p class="lightbox-image-caption" id="lightbox-caption">An ethereal green auroral curtain dances above the snow-dusted jagged peaks of Reine, mirrored in glacial waters.</p>
+            <p class="lightbox-image-caption" id="lightbox-caption">An ethereal green auroral curtain dances above the
+              snow-dusted jagged peaks of Reine, mirrored in glacial waters.</p>
           </div>
-          
+
           <div class="lb-info-secondary">
             <div class="lb-meta-item">
               <span class="meta-icon">
@@ -675,6 +644,7 @@
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
               </span>
+              <img src="assets/header-image.png" alt="Header Image" class="header-img" />
               <span class="meta-text" id="lightbox-location">Lofoten, Norway</span>
             </div>
 
@@ -685,6 +655,7 @@
                   <circle cx="12" cy="7" r="4"></circle>
                 </svg>
               </span>
+              <img src="assets/header-image.png" alt="Header Image" class="header-img" />
               <span class="meta-text" id="lightbox-photographer">Astrid Lindholm</span>
             </div>
 
@@ -695,6 +666,7 @@
                   <path d="M3 9h3l2-3h8l2 3h3a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V11a2 2 0 0 1 2-2z"></path>
                 </svg>
               </span>
+              <img src="assets/header-image.png" alt="Header Image" class="header-img" />
               <span class="meta-text mono-text" id="lightbox-exif">Sony A7R V • 16mm f/2.8 • ISO 1600 • 15s</span>
             </div>
           </div>
@@ -715,4 +687,5 @@
   <!-- JavaScript -->
   <script src="app.js"></script>
 </body>
+
 </html>
